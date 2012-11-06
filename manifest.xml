@@ -18,4 +18,9 @@
 	  <type>plugin</type>
 	  <name>notifications</name>
 	</requires>
+
+	<screenshot>
+	  <description>Admin widget</description>
+	  <path>screenshots/screenshot1.png</path>
+	</screenshot>
 </plugin_manifest>
