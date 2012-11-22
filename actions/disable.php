@@ -29,8 +29,12 @@ foreach ($emails as $email) {
   // individual notifications
   remove_entity_relationships($user->guid, 'notifyemail');
   
-  // notify the user via site message
-  if (elgg_is_active_plugin('messages')) {
+  // collections notifications
+  $user->collections_notifications_preferences_email = NULL;
+  
+  // notify the user via site message?
+  $notify = elgg_get_plugin_setting('site_notification', 'notifications_email_disable');
+  if (elgg_is_active_plugin('messages') && $notify != 'no') {
 	notify_user(
 			$user->guid,
 			elgg_get_site_entity()->guid,
