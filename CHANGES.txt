@@ -2,7 +2,7 @@
 
 x.x (mm/dd/yyyy):
 
-1.1 (11/21/2012):
+1.1 (11/22/2012):
  - adds plugin settings to determine how to notify the user
  - adds hook to remove notice when email updated
  - adds acknowledgement without forcing email update
