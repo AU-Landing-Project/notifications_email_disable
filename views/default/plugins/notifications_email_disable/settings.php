@@ -1,7 +1,8 @@
 <?php
 
-// options for notifying the user
+namespace AU\NotificationsEmailDisable;
 
+// options for notifying the user
 // system message
 echo elgg_view('input/dropdown', array(
 	'name' => 'params[system_message]',
@@ -17,17 +18,17 @@ echo ' ' . elgg_echo('notifications_email_disable:setting:system_message') . '<b
 
 // site notification
 if (elgg_is_active_plugin('messages')) {
-  echo elgg_view('input/dropdown', array(
-	'name' => 'params[site_notification]',
-	'value' => $vars['entity']->site_notification ? $vars['entity']->site_notification : 'yes',
-	'options_values' => array(
-		'yes' => elgg_echo('option:yes'),
-		'no' => elgg_echo('option:no')
-	)
-  ));
+	echo elgg_view('input/dropdown', array(
+		'name' => 'params[site_notification]',
+		'value' => $vars['entity']->site_notification ? $vars['entity']->site_notification : 'yes',
+		'options_values' => array(
+			'yes' => elgg_echo('option:yes'),
+			'no' => elgg_echo('option:no')
+		)
+	));
 
 
-  echo ' ' . elgg_echo('notifications_email_disable:setting:site_notification') . '<br><br>';
+	echo ' ' . elgg_echo('notifications_email_disable:setting:site_notification') . '<br><br>';
 }
 
 

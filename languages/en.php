@@ -1,6 +1,6 @@
 <?php
 
-$english = array(
+return array(
 	'email_disable' => "Email Disable",
 	'notifications_email_disable' => "Disable Email Widget",
 	'email_disable:widget:description' => "Disable email notifications for users with invalid addresses",
@@ -13,11 +13,8 @@ $english = array(
 	'notifications_email_disable:subject' => "Email notifications have been disabled",
 	'notifications_email_disable:settingslink' => "Take me to my email settings",
 	'notifications_email_disable:acknowledge' => "I understand",
-	
 	// settings
 	'notifications_email_disable:setting:system_message' => "Notify affected users by system message (single transient message on next pageload)",
 	'notifications_email_disable:setting:site_notification' => "Notify affected users by site notification (internal email-like message)",
 	'notifications_email_disable:setting:lightbox' => "Notify affected users by lightbox popup - occurs on every pageload until the user indicates that they have acknowledged the notice",
 );
-					
-add_translation("en",$english);

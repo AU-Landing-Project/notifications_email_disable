@@ -1,4 +1,4 @@
-notifications_email_disable
+Notifications Email Disable
 ===========================
 
-admin widget for quick disabling of email notifications for users with invalid email addresses
+Admin widget for quick disabling of email notifications for users with invalid email addresses

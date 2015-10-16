@@ -2,6 +2,9 @@
 
 x.x (mm/dd/yyyy):
 
+2.0.0 (10/15/2015):
+ - Elgg 1.9+ upgrade
+
 1.1 (11/22/2012):
  - adds plugin settings to determine how to notify the user
  - adds hook to remove notice when email updated
